@@ -1,106 +1,42 @@
-import Image from "next/image";
+// import Image from "next/image"
+// import BackgroundImage from "../../public/assets/home/background-home-desktop.jpg"
+
+import NavBar from "../../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-
-       <h1 className="text-3xl underline text-red-60">
-          hello world
-       </h1>
-
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="xl:bg-Home-Desktop xl:bg-center xl:h-screen xl:bg-cover md:bg-Home-Tablet md:bg-center md:h-screen md:bg-cover sm:bg-Home-Moblie sm:bg-center sm:h-screen sm:bg-cover xm:bg-Home-Moblie xm:bg-center xm:h-screen xm:bg-cover mx:bg-Home-Moblie mx:bg-center mx:h-screen mx:bg-cover lg:bg-Home-Tablet lg:bg-center lg:h-screen lg:bg-cover">
+      <div className="">
+        <NavBar />
+      </div>
+      <div className=" xl:p-28 xl:w-[1110px] xl:h-[343px] xl:flex md:text-center lg:text-center sm:text-center xm:text-center mx:text-center md:p-5 md:mt-10 lg:mt-10 lg:p-5 md:w-[768px] lg:w-[768px] sm:w-[327px] sm:h-[294px] xm:w-[327px] xm:h-[294px]  mx:w-[327px] mx:h-[294px]">
+            {/* headline and paragraphs */}
+        <div className="xl:w-[5430px] xl:h-[343px] md:w-[512px] lg:w-[512px] md:h-[334px] lg:h-[334px] xl:ml-0 md:ml-32 lg:ml-64 sm:ml-[90px] xm:ml-[90px] mx:ml-[90px]">
+            {/* headline */}
+          <div className="xl:w-[540px] md:w-[540px] space-y-4 sm:w-[290px] xm:w-[327px] mx:w-[290px]">
+             <h4 className="h-[34px] text-2xl text-HomeText sm:text-base xm:text-lg mx:text-base xm:-ml-5 sm:ml-5 mx:ml-5 xl:-ml-16 md:-ml-20 lg:-ml-48">
+                SO, YOU WANT TO TRAVEL TO
+             </h4>
+             <h1 className="xl:h-[160px] lg:h-[160px] mx:h-[95px] sm:h-[95px] xm:h-[120px] xl:text-9xl lg:text-9xl md:text-8xl text-white sm:text-7xl xm:text-8xl mx:text-7xl sm:ml-5 xm:-ml-5 mx:ml-5 xl:ml-20 md:-ml-20 lg:-ml-48">
+                SPACE
+             </h1>
+          </div>
+             {/* paragraphs */}
+          <div className="xl:w-[500px] xl:h-[96px] lg:w-[500px] lg:h-[96px] md:w-[500px] md:h-[96px] sm:w-[327px] xm:w-[327px] mx:w-[327px] xm:ml-2 mx:ml-2 sm:ml-2 xl:ml-28 lg:-ml-12">
+            <p className="text-HomeText mx:-ml-10 xm:-ml-10 sm:-ml-10 xl:-ml-2 lg:-ml-">
+              Let’s face it; if you want to go to space, you might as well genuinely go to 
+              outer space and not hover kind of on the edge of it. Well sit back, and relax 
+              because we’ll give you a truly out of this world experience!
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          
+          <div className="w-[540px] h-[272px] xl:ml-64  lg:ml-40 md:ml-24 mx:-ml-6 mx:mt-20 sm:-ml-6 sm:mt-20 xm:-ml-6 xm:mt-20 xl:mt-0 lg:mt-0 md:mt-0">
+            <button className="xl:w-[272px] xl:h-[272px] lg:w-[272px] lg:h-[272px] md:w-[272px] md:h-[272px] xm:w-[154px] xm:h-[154px] sm:w-[154px] sm:h-[154px] mx:w-[154px] mx:h-[154px] rounded-full bg-white">
+               <span className="w-[136px] h-[37px] text-2xl text-blue-950">Explore</span>
+            </button>
+          </div>
+      </div>
     </div>
   );
 }
