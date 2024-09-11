@@ -5,7 +5,7 @@ import NavBar from "../../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="xl:bg-Home-Desktop xl:bg-center xl:h-screen xl:bg-cover md:bg-Home-Tablet md:bg-center md:h-screen md:bg-cover sm:bg-Home-Moblie sm:bg-center sm:h-screen sm:bg-cover xm:bg-Home-Moblie xm:bg-center xm:h-screen xm:bg-cover mx:bg-Home-Moblie mx:bg-center mx:h-screen mx:bg-cover lg:bg-Home-Tablet lg:bg-center lg:h-screen lg:bg-cover">
+    <div className="xl:bg-Home-Desktop xl:bg-center xl:h-screen xl:bg-cover md:bg-Home-Tablet md:bg-center md:h-screen md:bg-cover sm:bg-Home-Moblie sm:bg-center sm:h-max sm:bg-cover xm:bg-Home-Moblie xm:bg-center xm:h-[1000px] xm:bg-cover mx:bg-Home-Moblie mx:bg-center mx:h-[1000px] mx:bg-cover lg:bg-Home-Tablet lg:bg-center lg:h-screen lg:bg-cover">
       <div className="">
         <NavBar />
       </div>
