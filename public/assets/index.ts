@@ -5,7 +5,10 @@ import titan from "./destination/image-titan.png"
 import Logo from "./shared/logo.svg"
 import Close from "./shared/icon-close.svg"
 import Hamburger from "./shared/icon-hamburger.svg"
-
+import mark from "./crew/image-mark-shuttleworth.png"
+import anousheh from "./crew/image-anousheh-ansari.png"
+import douglas from "./crew/image-douglas-hurley.png"
+import victor from "./crew/image-victor-glover.png"
 export {
     mars,
     moon,
@@ -14,4 +17,8 @@ export {
     Logo,
     Close,
     Hamburger,
+    mark,
+    anousheh,
+    douglas,
+    victor,
 }

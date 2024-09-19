@@ -25,7 +25,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div className="xl:w-[736px] xl:h-[96px] xl:-mr-[5.5rem] xl:-mt-3 md:-mt-3 lg:-mt-5 xl:flex md:flex sm:hidden xm:hidden mx:hidden  bg-white/10 backdrop-blur-0 shadow-lg">
+        <div className="xl:w-[736px] lg:w-[2500px] lg:-mr-10 md:w-[3000px] md:-mr-20 xl:h-[96px] xl:-mr-[5.5rem] xl:-mt-3 md:-mt-3 lg:-mt-3 xl:flex md:flex sm:hidden xm:hidden mx:hidden  bg-white/10 backdrop-blur-0 shadow-lg">
           {NavLinks.map(({ id, title, link, number }) => (
             <ul key={id} className="flex p-10 space-x-10 ml-">
               <li>
@@ -37,31 +37,6 @@ const NavBar = () => {
             </ul>
           ))}
         </div>
-
-        {/* <div className="xl:w-[736px] xl:h-[96px] xl:bg-slate-5 xl:-mr-[5.5rem] xl:-mt-3 md:-mt-3 lg:-mt-5 xl:flex md:flex sm:hidden xm:hidden mx:hidden">
-          <ul className="flex p-10 space-x-10 ml-10">
-            <li>
-              <Link href="/" className="text-white">
-                00 <span className="text-sm">Home</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/destination" className="text-white">
-                01 <span className="text-sm">Destination</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/crew" className="text-white">
-                02 <span className="text-sm">Crew</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/technology" className="text-white">
-                03 <span className="text-sm">Technology</span>
-              </Link>
-            </li>
-          </ul>
-        </div> */}
 
         {/* Side Bar */}
         <div className="sm:flex sm:ml-72 sm:mt-7 xm:flex xm:ml-72 xm:mt-7 mx:flex mx:ml-72 mx:mt-7 md:hidden lg:hidden xl:hidden">

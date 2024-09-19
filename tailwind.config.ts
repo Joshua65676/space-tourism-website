@@ -23,6 +23,9 @@ const config: Config = {
         'Destination-Desktop': "url('/assets/destination/background-destination-desktop.jpg')",
         'Destination-Tablet': "url('/assets/destination/background-destination-tablet.jpg')",
         'Destination-Moblie': "url('/assets/destination/background-destination-tablet.jpg')",
+        'Crew-Desktop': "url('/assets/crew/background-crew-desktop.jpg')",
+        'Crew-Tablet': "url('/assets/crew/background-crew-tablet.jpg')",
+        'Crew-Moblie': "url('/assets/crew/background-crew-moblie.jpg')",
       },
       colors: {
         'Line': 'rgba(151, 151, 151, 255)',

@@ -33,11 +33,11 @@ export default function Home() {
 
         <div className="w-[50px] h-[272px] xl:ml-64  lg:ml-40 md:ml-24 mx:ml-40 mx:mt-20 sm:ml-40 sm:mt-20 xm:ml-40 xm:mt-20 xl:mt-0 lg:mt-0 md:mt-0">
           <Link href="/destination">
-          <button className="xl:w-[272px] xl:h-[272px] lg:w-[272px] lg:h-[272px] md:w-[272px] md:h-[272px] xm:w-[154px] xm:h-[154px] sm:w-[154px] sm:h-[154px] mx:w-[154px] mx:h-[154px] rounded-full bg-white">
-            <span className="w-[136px] h-[37px] text-2xl text-blue-950">
-              Explore
-            </span>
-          </button>
+            <button className="xl:w-[272px] xl:h-[272px] lg:w-[272px] lg:h-[272px] md:w-[272px] md:h-[272px] xm:w-[154px] xm:h-[154px] sm:w-[154px] sm:h-[154px] mx:w-[154px] mx:h-[154px] rounded-full bg-white">
+              <span className="w-[136px] h-[37px] text-2xl text-blue-950">
+                Explore
+              </span>
+            </button>
           </Link>
         </div>
       </div>

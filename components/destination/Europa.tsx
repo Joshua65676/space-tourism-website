@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { europa } from "../public/assets/index";
+import { europa } from "../../public/assets/index";
 import { DestinationLinks } from "@/constants";
 
 interface Props {
