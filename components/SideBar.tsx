@@ -15,7 +15,7 @@ const SideBar = () => {
   };
   return (
     <div className="w-[37px] h-[88px]">
-      <div className="-ml-3" onClick={toggleIcon}>
+      <div className="mx:ml-1 sm:-ml-8" onClick={toggleIcon}>
         {isOpen ? (
           <Image src={Hamburger} alt="hamburger" />
         ) : (

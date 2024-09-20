@@ -15,15 +15,15 @@ const Mark: React.FC<Props> = ({ activeView, setActiveView }) => {
         {/* Explanation */}
         <div className="xl:w-[445px] xl:pt-10 xl:h-[390px] lg:h-[300px] md:space-y-7 lg:space-y-7 xl:space-y-10">
           {/* Explanation heading */}
-          <div className="space-y-3 xl:h-[110px] w-[530px] xl:ml-32 lg:ml-0 md:ml-0 mx:ml-10 xm:ml-10 sm:ml-10">
-            <h2 className="text-white opacity-50 xl:text-[32px] xl:ml-0 lg:text-2xl lg:ml-10 md:text-2xl md:ml-10 uppercase">Mission Specialist</h2>
-            <h1 className="text-white uppercase xl:text-[50px] xl:ml-0 lg:text-[40px] lg:-ml-20 md:text-[40px] md:-ml-20 mx:text-7xl xm:text-7xl sm:text-7xl">
+          <div className="space-y-3 xl:h-[110px] xm:h-[100px] mx:h-[100px] xl:w-[530px] xl:ml-32 lg:ml-0 md:ml-0 mx:ml-10 xm:ml-10 sm:ml-10">
+            <h2 className="text-white opacity-50 xl:text-[32px] xl:ml-0 lg:text-2xl lg:ml-10 md:text-2xl md:ml-10 xm:text-lg mx:text-xl xm:ml-10 mx:ml-4 uppercase">Mission Specialist</h2>
+            <h1 className="text-white uppercase xl:text-[50px] xl:leading-none xl:ml-0 lg:text-[40px] lg:-ml-20 md:text-[40px] md:-ml-20 mx:text-2xl xm:text-2xl sm:text-2xl mx:-ml-5 xm:-ml-3">
               MARK SHUTTLEWORTH
             </h1>
           </div>
           {/* Explanation Paragraph*/}
-          <div className="xl:pt-6 xl:h-[51px] xl:w-[539px] md:w-[600px] lg:w-[600px] lg:-ml-36 md:-ml-32 xm:w-[327px] xm:h-[135px] mx:w-[327px] mx:h-[135px] sm:w-[327px] sm:h-[135px] sm:-ml-3 xm:-ml-3 mx:-ml-3 sm:text-center xm:text-center mx:text-center xl:ml-32 xl:text-left lg:text-center md:text-center">
-            <p className="text-HomeText leading-loose text-lg font-normal">
+          <div className="xl:pt-6 xl:h-[51px] xl:w-[539px] md:w-[600px] lg:w-[600px] lg:-ml-36 md:-ml-32 xm:w-[340px] xm:h-[200px] mx:w-[340px] mx:h-[200px] sm:w-[327px] sm:h-[135px] sm:-ml-3 xm:-ml-1 mx:-ml-4 sm:text-center xm:text-center mx:text-center xl:ml-32 xl:text-left lg:text-center md:text-center">
+            <p className="text-HomeText leading-loose xl:text-lg lg:text-lg md:text-lg font-normal xm:text-[15px] mx:text-[15px]">
               Mark Richard Shuttleworth is the founder and CEO of Canonical, the
               company behind the Linux-based Ubuntu operating system.
               Shuttleworth became the first South African to travel to space as
@@ -31,12 +31,12 @@ const Mark: React.FC<Props> = ({ activeView, setActiveView }) => {
             </p>
           </div>
           {/* Explanation List*/}
-          <div className="xl:m-32 xl:pt-32 space-x-5 lg:ml-28 md:ml-28">
+          <div className="xl:m-32 xl:pt-32 space-x-5 lg:ml-28 md:ml-28 xm:ml-28 mx:ml-[5.5rem]">
             {CrewLinks.map(({ id, path }) => (
               <label key={id} className="">
                 <input
                   type="radio"
-                  name="Douglas"
+                  name="Mark"
                   value="path"
                   checked={activeView === path}
                   onChange={() => setActiveView(path)}
@@ -46,11 +46,11 @@ const Mark: React.FC<Props> = ({ activeView, setActiveView }) => {
           </div>
         </div>
         {/* Image */}
-        <div className="xl:w-[539px] xl:h-[64px] xl:pl-10 lg:ml-0 md:ml-0 sm:ml-20 xm:ml-20 mx:ml-20">
+        <div className="xl:w-[539px] xl:h-[64px] xl:pl-10 lg:ml-0 md:ml-0 sm:ml-20 xm:ml-8 mx:ml-8">
           <Image
             src={mark}
-            alt="Moon Image"
-            className="xl:w-[330px] xl:-mb-16 xl:-mt-16 lg:w-[340px] lg:-mb-32 lg:-mt-10 md:w-[340px] md:-mb- md:-mt-5 sm:w-[150px] xm:w-[150px] mx:w-[150px]"
+            alt="Mark Image"
+            className="xl:w-[330px] xl:-mb-16 xl:-mt-16 lg:w-[340px] lg:-mb-32 lg:-mt-10 md:w-[340px] md:-mb- md:-mt-5 sm:w-[150px] xm:w-[271.27px] mx:w-[271.27px]"
           />
         </div>
       </main>

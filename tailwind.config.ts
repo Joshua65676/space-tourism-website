@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       screens: {
         sm: '300px',
-        xm: '410px',
         mx: '350px',
+        xm: '410px',
         md: '768px',
         lg: '876px',
         xl: '1440px',
@@ -25,7 +25,7 @@ const config: Config = {
         'Destination-Moblie': "url('/assets/destination/background-destination-tablet.jpg')",
         'Crew-Desktop': "url('/assets/crew/background-crew-desktop.jpg')",
         'Crew-Tablet': "url('/assets/crew/background-crew-tablet.jpg')",
-        'Crew-Moblie': "url('/assets/crew/background-crew-moblie.jpg')",
+        'Crew-Moblie': "url('/assets/crew/background-crew-mobile.jpg')",
       },
       colors: {
         'Line': 'rgba(151, 151, 151, 255)',
