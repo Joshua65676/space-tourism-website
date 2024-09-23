@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { Logo } from "../public/assets/index";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import SideBar from "./SideBar";
 import { NavLinks } from "@/constants";
 
 const NavBar = () => {
+  const [activeLink, setActiveLink] = useState<string>('Home');
+
   return (
     <main className="xl:w-[1440px] xl:h-[136px]">
       <nav className="flex justify-between p-10 text-center">
@@ -27,11 +29,13 @@ const NavBar = () => {
 
         <div className="xl:w-[736px] lg:w-[2500px] lg:-mr-10 md:w-[3000px] md:-mr-20 xl:h-[96px] xl:-mr-[5.5rem] xl:-mt-3 md:-mt-3 lg:-mt-3 xl:flex md:flex sm:hidden xm:hidden mx:hidden  bg-white/10 backdrop-blur-0 shadow-lg">
           {NavLinks.map(({ id, title, link, number }) => (
-            <ul key={id} className="flex p-10 space-x-10 ml-">
+            <ul key={id} className="flex p-10 space-x-10 ml- h-24 flex-col gap-2">
               <li>
-                <Link href={link} className="text-white">
+                <Link href={link}
+                className={`text-white hover:border-b-2 border-Line h-14 gap-2 inline-flex flex-row ${activeLink === title ? "border-b-2 border-white h-14 gap-2 inline-flex flex-row" : " "}`}
+                onClick={() => setActiveLink(title)}>
                   <span> {number} </span>
-                  <span className="text-sm">{title}</span>
+                  <span className="text-sm pt-1">{title}</span>
                 </Link>
               </li>
             </ul>

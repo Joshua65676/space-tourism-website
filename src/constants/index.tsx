@@ -18,3 +18,9 @@ export const CrewLinks = [
   { id: "link-3", path: "Victor" },
   { id: "link-4", path: "Anousheh" },
 ];
+
+export const TechnologyLinks = [
+  {id: "link-1", number: "1", links: "Launch"},
+  {id: "link-2", number: "2", links: "Spaceport"},
+  {id: "link-3", number: "3", links: "Space"},
+];

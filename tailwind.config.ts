@@ -26,6 +26,9 @@ const config: Config = {
         'Crew-Desktop': "url('/assets/crew/background-crew-desktop.jpg')",
         'Crew-Tablet': "url('/assets/crew/background-crew-tablet.jpg')",
         'Crew-Moblie': "url('/assets/crew/background-crew-mobile.jpg')",
+        'Technology-Desktop': "url('/assets/technology/background-technology-desktop.jpg')",
+        'Technology-Tablet': "url('/assets/technology/background-technology-tablet.jpg')",
+        'Technology-Mobile': "url('/assets/technology/background-technology-mobile.jpg')",
       },
       colors: {
         'Line': 'rgba(151, 151, 151, 255)',

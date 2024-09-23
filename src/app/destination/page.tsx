@@ -13,15 +13,15 @@ const Destination: React.FC = () => {
   const renderView = () => {
     switch (activeView) {
       case "Moon":
-        return <Moon setActiveView={setActiveView} />;
+        return <Moon activeView={activeView} setActiveView={setActiveView} />;
       case "Mars":
-        return <Mars setActiveView={setActiveView} />;
+        return <Mars activeView={activeView} setActiveView={setActiveView} />;
       case "Europa":
-        return <Europa setActiveView={setActiveView} />;
+        return <Europa activeView={activeView} setActiveView={setActiveView} />;
       case "Titan":
-        return <Titan setActiveView={setActiveView} />;
+        return <Titan activeView={activeView} setActiveView={setActiveView} />;
       default:
-        return <Moon setActiveView={setActiveView} />;
+        return <Moon activeView={activeView} setActiveView={setActiveView} />;
     }
   };
 

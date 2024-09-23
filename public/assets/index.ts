@@ -9,6 +9,13 @@ import mark from "./crew/image-mark-shuttleworth.png"
 import anousheh from "./crew/image-anousheh-ansari.png"
 import douglas from "./crew/image-douglas-hurley.png"
 import victor from "./crew/image-victor-glover.png"
+import launchDesktop from "./technology/image-launch-vehicle-portrait.jpg"
+import launchTablet from "./technology/image-launch-vehicle-landscape.jpg"
+import spaceDesktop from "./technology/image-space-capsule-portrait.jpg"
+import spaceTablet from "./technology/image-space-capsule-landscape.jpg"
+import spaceportDesktop from "./technology/image-spaceport-portrait.jpg"
+import spaceportTablet from "./technology/image-spaceport-landscape.jpg"
+
 export {
     mars,
     moon,
@@ -21,4 +28,10 @@ export {
     anousheh,
     douglas,
     victor,
+    launchDesktop,
+    launchTablet,
+    spaceDesktop,
+    spaceTablet,
+    spaceportDesktop,
+    spaceportTablet
 }

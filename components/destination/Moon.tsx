@@ -4,10 +4,11 @@ import { moon } from "../../public/assets/index";
 import { DestinationLinks } from "@/constants";
 
 interface Props {
+  activeView: string;
   setActiveView: (view: string) => void;
 }
 
-const Moon: React.FC<Props> = ({ setActiveView }) => {
+const Moon: React.FC<Props> = ({ activeView, setActiveView }) => {
   return (
     <div>
       <div className="xl:flex xl:justify-between xl:p-16 xl:space-x-44 lg:p-20 md:p-28 sm:p- xm:p- mx:p-16 lg:ml-56 xl:ml-0 md:ml-32 md:space-y-14 lg:space-y-12 xl:space-y-0 sm:space-y-8 xm:space-y-8 mx:space-y-8">
@@ -27,7 +28,10 @@ const Moon: React.FC<Props> = ({ setActiveView }) => {
               {DestinationLinks.map(({ id, links }) => (
                 <ul key={id} className="">
                   <li className="text-white">
-                    <button onClick={() => setActiveView(links)}>
+                    <button
+                     className={` hover:border-b-2 border-Line ${activeView === links ? 'border-b-2 border-white' : " "}`}
+                     onClick={() => setActiveView(links)}
+                     >
                       {links}
                     </button>
                   </li>
