@@ -1,7 +1,7 @@
 import { TechnologyLinks } from "@/constants";
 import React from "react";
 import Image from "next/image";
-import { launchTablet, launchDesktop } from "../../public/assets";
+import { launchTablet, launchDesktop, launchMobile } from "../../public/assets";
 
 interface Props {
   activeView: string;
@@ -54,8 +54,9 @@ const Launch: React.FC<Props> = ({ activeView, setActiveView }) => {
         </div>
         {/* IMAGE */}
         <div className="xl:-mt-5 xl:pl-10">
-          <Image src={launchTablet} alt="" className="xl:hidden lg:flex lg:w-[900px] lg:h-[400px] md:flex md:w-[900px] md:h-[400px] mix-blend-screen" />
-          <Image src={launchDesktop} alt="" className="xl:w-[608px] xl:h-[460px] xl:flex lg:hidden md:hidden mix-blend-screen" />
+          <Image src={launchTablet} alt="" className="xl:hidden lg:flex lg:w-[900px] lg:h-[400px] md:flex md:w-[900px] md:h-[400px] sm:hidden xm:hidden mx:hidden mix-blend-screen" />
+          <Image src={launchDesktop} alt="" className="xl:w-[608px] xl:h-[460px] xl:flex lg:hidden md:hidden sm:hidden xm:hidden mx:hidden mix-blend-screen" />
+          <Image src={launchMobile} alt="" className="xm:w-[608px] xm:h-[460px] xm:flex mx:w-[608px] mx:h-[460px] mx:flex sm:w-[608px] sm:h-[460px] sm:flex xl:hidden lg:hidden md:hidden mix-blend-screen" />
         </div>
       </main>
     </section>

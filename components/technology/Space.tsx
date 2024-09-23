@@ -1,7 +1,7 @@
 import React from "react";
 import { TechnologyLinks } from "@/constants";
 import Image from "next/image";
-import { spaceTablet, spaceDesktop } from "../../public/assets";
+import { spaceTablet, spaceDesktop, spaceMobile } from "../../public/assets";
 
 interface Props {
   activeView: string;
@@ -51,8 +51,9 @@ const Space: React.FC<Props> = ({ activeView, setActiveView }) => {
         </div>
         {/* IMAGE */}
         <div className="xl:-mt-5 xl:pl-10">
-          <Image src={spaceTablet} alt="" className="xl:hidden lg:flex lg:w-[900px] lg:h-[400px] md:flex md:w-[900px] md:h-[400px] mix-blend-screen" />
-          <Image src={spaceDesktop} alt="" className="xl:w-[608px] xl:h-[460px] xl:flex lg:hidden md:hidden mix-blend-screen" />
+          <Image src={spaceTablet} alt="" className="xl:hidden sm:hidden xm:hidden mx:hidden lg:flex lg:w-[900px] lg:h-[400px] md:flex md:w-[900px] md:h-[400px] mix-blend-screen" />
+          <Image src={spaceDesktop} alt="" className="xl:w-[608px] xl:h-[460px] xl:flex lg:hidden md:hidden sm:hidden xm:hidden mx:hidden mix-blend-screen" />
+          <Image src={spaceMobile} alt="" className="xm:w-[608px] xm:h-[460px] xm:flex mx:w-[608px] mx:h-[460px] mx:flex sm:w-[608px] sm:h-[460px] sm:flex xl:hidden lg:hidden md:hidden mix-blend-screen" />
         </div>
       </main>
     </section>
