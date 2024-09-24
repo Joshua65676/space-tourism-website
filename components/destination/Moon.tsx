@@ -29,7 +29,7 @@ const Moon: React.FC<Props> = ({ activeView, setActiveView }) => {
                 <ul key={id} className="">
                   <li className="text-white">
                     <button
-                     className={` hover:border-b-2 border-Line ${activeView === links ? 'border-b-2 border-white' : " "}`}
+                     className={` hover:border-b-4 border-Line ${activeView === links ? 'border-b-4 border-white' : " "}`}
                      onClick={() => setActiveView(links)}
                      >
                       {links}

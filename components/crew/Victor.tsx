@@ -15,7 +15,7 @@ const Victor: React.FC<Props> = ({ activeView, setActiveView }) => {
         {/* Explanation */}
         <div className="xl:w-[445px] xl:pt-10 xl:h-[390px] lg:h-[300px] md:space-y-7 lg:space-y-7 xl:space-y-10">
           {/* Explanation heading */}
-          <div className="space-y-3 h-[110px] w-[530px] xl:ml-32 lg:-ml-0 md:-ml-0 mx:ml-10 xm:ml-10 sm:ml-10">
+          <div className="xl:space-y-5 space-y-3 h-[110px] w-[530px] xl:ml-32 lg:-ml-0 md:-ml-0 mx:ml-10 xm:ml-10 sm:ml-10">
             <h2 className="text-white opacity-50 xl:text-[32px] xl:ml-0 lg:text-3xl lg:ml-28 md:text-3xl md:ml-32 xm:text-lg mx:text-xl xm:ml-24 mx:ml-20 uppercase">PILOT</h2>
             <h1 className="text-white uppercase xl:text-[50px] xl:ml-0 lg:text-[40px] lg:-ml-3 md:text-[40px] md:ml-3 mx:text-2xl xm:text-2xl sm:text-2xl mx:ml-5 xm:ml-7">
               Victor Glover

@@ -29,7 +29,7 @@ const Technology: React.FC = () => {
         </div>
         <main className="xl:p-2 mx:-ml-3">
           {/* Text Heading */}
-          <div className="xl:w-[357px] xl:h-[34px] xl:ml-52  xl:-mt-0 md:ml-24 md:mt-5 lg:ml-24 lg:mt-4 mx:-mt-12 mx:ml-20 sm:-mt-14 sm:ml-24 xm:ml-24 xm:-mt-14">
+          <div className="xl:w-[357px] xl:h-[34px] xl:ml-52  xl:-mt-0 md:ml-24 md:mt-5 lg:ml-24 lg:mt-4 mx:-mt-12 mx:ml-28 sm:-mt-14 sm:ml-24 xm:ml-28 xm:-mt-14">
             <h2 className="text-Line text-xl font-semibold">
               03{" "}
               <span className="text-white font-medium">SPACE LAUNCH 101</span>

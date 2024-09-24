@@ -10,7 +10,7 @@ export default function Home() {
       {/* <div className="container max-w-6xl mx-auto w-full"> */}
       <div className=" xl:p-28 xl:w-[1110px] xl:h-[343px] xl:flex md:text-center lg:text-center sm:text-center xm:text-center mx:text-center md:p-5 md:mt-10 lg:mt-10 lg:p-5 md:w-[768px] lg:w-[768px] sm:w-[327px] sm:h-[294px] xm:w-[327px] xm:h-[294px]  mx:w-[327px] mx:h-[294px] sm:-ml-12">
         {/* headline and paragraphs */}
-        <div className="xl:w-[5430px] xl:h-[343px] md:w-[512px] lg:w-[512px] md:h-[334px] lg:h-[334px] xl:ml-0 md:ml-32 lg:ml-64 sm:ml-[90px] xm:ml-[90px] mx:ml-[90px]">
+        <div className="xl:w-[5430px] xl:h-[343px] md:w-[512px] lg:w-[512px] md:h-[334px] lg:h-[334px] xl:ml-0 md:ml-32 lg:ml-64 sm:ml-[90px] xm:ml-[110px] mx:ml-[90px]">
           {/* headline */}
           <div className="xl:w-[540px] md:w-[540px] space-y-4 sm:w-[290px] xm:w-[327px] mx:w-[290px]">
             <h4 className="h-[34px] text-2xl text-HomeText sm:text-base xm:text-lg mx:text-base xm:-ml-5 sm:ml-5 mx:ml-5 xl:-ml-16 md:-ml-20 lg:-ml-48">
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-[320px] p-8 h-[320px] xl:ml-64  lg:ml-40 md:ml-24 mx:ml-40 mx:mt-20 sm:ml-40 sm:mt-20 xm:ml-40 xm:mt-20 xl:mt-0 lg:mt-0 md:mt-0 hover:shadow-lg hover:rounded-full hover:bg-white/10 backdrop-blur-0">
+        <div className="w-[320px] p-8 h-[320px] xl:ml-64  lg:ml-40 md:ml-24 mx:ml-20 mx:mt-20 sm:ml-20 sm:mt-20 xm:ml-24 xm:mt-20 xl:mt-0 lg:mt-0 md:mt-0 hover:shadow-lg hover:rounded-full hover:bg-white/10 backdrop-blur-0">
           <Link className="" href="/destination">
             <button className="xl:w-[250px] xl:h-[250px] lg:w-[272px] lg:h-[272px] md:w-[272px] md:h-[272px] xm:w-[154px] xm:h-[154px] sm:w-[154px] sm:h-[154px] mx:w-[154px] mx:h-[154px] rounded-full bg-white">
               <span className="w-[136px] h-[37px] text-2xl text-blue-950">
