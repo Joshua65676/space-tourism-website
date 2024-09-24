@@ -33,7 +33,7 @@ const Destination: React.FC = () => {
         </div>
         <main className="xl:p-2 mx:-ml-3">
           {/* Text Heading */}
-          <div className="xl:w-[357px] xl:h-[34px] xl:ml-48  xl:-mt-0 md:ml-20 md:-mt-4 lg:ml-20 lg:-mt-10 mx:-mt-12 mx:ml-20 sm:-mt-14 sm:ml-24 xm:ml-24 xm:-mt-14">
+          <div className="xl:w-[357px] xl:h-[34px] xl:ml-48  xl:-mt-0 md:ml-20 md:mt-5 lg:ml-20 lg:mt-5 mx:-mt-12 mx:ml-20 sm:-mt-14 sm:ml-24 xm:ml-24 xm:-mt-14">
             <h2 className="text-Line text-xl font-semibold">
               01{" "}
               <span className="text-white font-medium">
