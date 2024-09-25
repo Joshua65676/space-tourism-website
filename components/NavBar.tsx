@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import { Logo } from "../public/assets/index";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import SideBar from "./SideBar";
 import { NavLinks } from "@/constants";
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState<string>('Home');
+  // const [activeLink, setActiveLink] = useState<string>('Home');
+  const pathname = usePathname()
 
   return (
     <main className="xl:w-[1440px] xl:h-[136px]">
@@ -32,8 +34,7 @@ const NavBar = () => {
             <ul key={id} className="flex p-10 space-x-10 ml- h-24 flex-col gap-2">
               <li>
                 <Link href={link}
-                className={`text-white hover:border-b-2 border-Line h-14 gap-2 inline-flex flex-row ${activeLink === title ? "border-b-2 border-white h-14 gap-2 inline-flex flex-row" : " "}`}
-                onClick={() => setActiveLink(title)}>
+                className={`text-white hover:border-b-2 border-Line h-14 gap-2 inline-flex flex-row ${pathname === link ? "border-b-2 border-white h-14 gap-2 inline-flex flex-row" : " "}`}>
                   <span> {number} </span>
                   <span className="text-sm pt-1">{title}</span>
                 </Link>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import Image from "next/image";
 import { Close } from "../public/assets/index";
 import { Hamburger } from "../public/assets/index";
@@ -9,7 +10,7 @@ import { NavLinks } from "@/constants";
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [activeLink, setActiveLink] = useState<string>('Home');
+  const pathname = usePathname()
 
   const toggleIcon = () => {
     setIsOpen(!isOpen);
@@ -25,10 +26,9 @@ const SideBar = () => {
           <div className="space-y-10 ml-4 absolute text-left">
             {NavLinks.map(({ id, title, link, number }) => (
             <ul key={id} className="">
-              <li className={` ${activeLink === title ? " self-stretch h-[19px] border-r-2 border-white flex-col justify-center items-start gap-2 flex" : " "}`}>
+              <li className={` ${pathname === link ? " self-stretch h-[19px] border-r-2 border-white flex-col justify-center items-start gap-2 flex" : " "}`}>
                 <Link href={link}
-                className="z-[1] relative font-['Barlow Condensed'] tracking-[2.70px] text-white text-base font-bold justify-start items-start gap-3 flex"
-                onClick={() => setActiveLink(title)}>
+                className="z-[1] relative font-['Barlow Condensed'] tracking-[2.70px] text-white text-base font-bold justify-start items-start gap-3 flex">
                   <span> {number} </span>
                   <span className="text-base font-normal tracking-widest font-['Barlow Condensed']">{title}</span>
                 </Link>
